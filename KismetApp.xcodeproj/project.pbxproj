@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		434812A5C87AA7472110CDC6 /* Pods_KismetApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A70B38AEFB34D759F3F348F2 /* Pods_KismetApp.framework */; };
+		4557F5C422206F900094B58E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4557F5C322206F900094B58E /* Launch Screen.storyboard */; };
+		4557F5CA222073DE0094B58E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4557F5C9222073DE0094B58E /* LoginView.swift */; };
+		4557F5CC2220743F0094B58E /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4557F5CB2220743F0094B58E /* LoginView.xib */; };
 		45CAD8982216090C009FB1B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CAD8972216090C009FB1B4 /* AppDelegate.swift */; };
 		45CAD89A2216090C009FB1B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CAD8992216090C009FB1B4 /* ViewController.swift */; };
 		45CAD89D2216090C009FB1B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45CAD89B2216090C009FB1B4 /* Main.storyboard */; };
 		45CAD89F22160910009FB1B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45CAD89E22160910009FB1B4 /* Assets.xcassets */; };
-		45CAD8A222160910009FB1B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45CAD8A022160910009FB1B4 /* LaunchScreen.storyboard */; };
 		45CAD8AA2216099A009FB1B4 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 45CAD8A92216099A009FB1B4 /* GoogleService-Info (1).plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1D13E95E58A645E119D3C855 /* Pods-KismetApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KismetApp.release.xcconfig"; path = "Target Support Files/Pods-KismetApp/Pods-KismetApp.release.xcconfig"; sourceTree = "<group>"; };
+		4557F5C322206F900094B58E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		4557F5C9222073DE0094B58E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4557F5CB2220743F0094B58E /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		45CAD8942216090C009FB1B4 /* KismetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KismetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45CAD8972216090C009FB1B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45CAD8992216090C009FB1B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		45CAD89C2216090C009FB1B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		45CAD89E22160910009FB1B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		45CAD8A122160910009FB1B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45CAD8A322160910009FB1B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45CAD8A92216099A009FB1B4 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
 		A70B38AEFB34D759F3F348F2 /* Pods_KismetApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KismetApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,7 +52,6 @@
 				F37A1B25675B0943053771BD /* Pods-KismetApp.debug.xcconfig */,
 				1D13E95E58A645E119D3C855 /* Pods-KismetApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -75,11 +78,13 @@
 			children = (
 				45CAD8972216090C009FB1B4 /* AppDelegate.swift */,
 				45CAD8992216090C009FB1B4 /* ViewController.swift */,
+				4557F5C9222073DE0094B58E /* LoginView.swift */,
+				4557F5CB2220743F0094B58E /* LoginView.xib */,
 				45CAD89B2216090C009FB1B4 /* Main.storyboard */,
 				45CAD89E22160910009FB1B4 /* Assets.xcassets */,
-				45CAD8A022160910009FB1B4 /* LaunchScreen.storyboard */,
 				45CAD8A322160910009FB1B4 /* Info.plist */,
 				45CAD8A92216099A009FB1B4 /* GoogleService-Info (1).plist */,
+				4557F5C322206F900094B58E /* Launch Screen.storyboard */,
 			);
 			path = KismetApp;
 			sourceTree = "<group>";
@@ -152,9 +157,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45CAD8A222160910009FB1B4 /* LaunchScreen.storyboard in Resources */,
 				45CAD89F22160910009FB1B4 /* Assets.xcassets in Resources */,
 				45CAD89D2216090C009FB1B4 /* Main.storyboard in Resources */,
+				4557F5C422206F900094B58E /* Launch Screen.storyboard in Resources */,
+				4557F5CC2220743F0094B58E /* LoginView.xib in Resources */,
 				45CAD8AA2216099A009FB1B4 /* GoogleService-Info (1).plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4557F5CA222073DE0094B58E /* LoginView.swift in Sources */,
 				45CAD89A2216090C009FB1B4 /* ViewController.swift in Sources */,
 				45CAD8982216090C009FB1B4 /* AppDelegate.swift in Sources */,
 			);
@@ -229,14 +236,6 @@
 				45CAD89C2216090C009FB1B4 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		45CAD8A022160910009FB1B4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				45CAD8A122160910009FB1B4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
