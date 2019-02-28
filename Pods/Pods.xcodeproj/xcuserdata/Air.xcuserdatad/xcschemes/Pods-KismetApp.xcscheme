@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "507B7ADF22BA96534C8901F9795AE633"
+               BlueprintIdentifier = "D7C376569A6400596A1EB1AF1DF451C0"
                BuildableName = "Pods_KismetApp.framework"
                BlueprintName = "Pods-KismetApp"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "507B7ADF22BA96534C8901F9795AE633"
+            BlueprintIdentifier = "D7C376569A6400596A1EB1AF1DF451C0"
             BuildableName = "Pods_KismetApp.framework"
             BlueprintName = "Pods-KismetApp"
             ReferencedContainer = "container:Pods.xcodeproj">

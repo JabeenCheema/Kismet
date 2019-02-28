@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		434812A5C87AA7472110CDC6 /* Pods_KismetApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A70B38AEFB34D759F3F348F2 /* Pods_KismetApp.framework */; };
+		452C267F222728410046D3D8 /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452C267E222728410046D3D8 /* UIViewController+Alerts.swift */; };
+		452C26812227365B0046D3D8 /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452C26802227365B0046D3D8 /* UserSession.swift */; };
+		452C268E22284B0F0046D3D8 /* KismetTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 452C268D22284B0F0046D3D8 /* KismetTab.storyboard */; };
+		452C269222284F060046D3D8 /* KismetTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452C269122284F060046D3D8 /* KismetTabController.swift */; };
 		4557F5C422206F900094B58E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4557F5C322206F900094B58E /* Launch Screen.storyboard */; };
 		4557F5CA222073DE0094B58E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4557F5C9222073DE0094B58E /* LoginView.swift */; };
 		4557F5CC2220743F0094B58E /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4557F5CB2220743F0094B58E /* LoginView.xib */; };
@@ -20,6 +24,10 @@
 
 /* Begin PBXFileReference section */
 		1D13E95E58A645E119D3C855 /* Pods-KismetApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KismetApp.release.xcconfig"; path = "Target Support Files/Pods-KismetApp/Pods-KismetApp.release.xcconfig"; sourceTree = "<group>"; };
+		452C267E222728410046D3D8 /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
+		452C26802227365B0046D3D8 /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
+		452C268D22284B0F0046D3D8 /* KismetTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KismetTab.storyboard; sourceTree = "<group>"; };
+		452C269122284F060046D3D8 /* KismetTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KismetTabController.swift; sourceTree = "<group>"; };
 		4557F5C322206F900094B58E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		4557F5C9222073DE0094B58E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4557F5CB2220743F0094B58E /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
@@ -55,6 +63,59 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		452C268422283F340046D3D8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				45CAD8992216090C009FB1B4 /* ViewController.swift */,
+				452C269122284F060046D3D8 /* KismetTabController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		452C268622283F8B0046D3D8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4557F5C9222073DE0094B58E /* LoginView.swift */,
+				4557F5CB2220743F0094B58E /* LoginView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		452C268722283FCF0046D3D8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				45CAD89B2216090C009FB1B4 /* Main.storyboard */,
+				452C268D22284B0F0046D3D8 /* KismetTab.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		452C268822283FF00046D3D8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				452C267E222728410046D3D8 /* UIViewController+Alerts.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		452C2689222840190046D3D8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45CAD8972216090C009FB1B4 /* AppDelegate.swift */,
+				45CAD89E22160910009FB1B4 /* Assets.xcassets */,
+				4557F5C322206F900094B58E /* Launch Screen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		452C268A2228403B0046D3D8 /* Firebase Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				452C26802227365B0046D3D8 /* UserSession.swift */,
+			);
+			path = "Firebase Utilities";
+			sourceTree = "<group>";
+		};
 		45CAD88B2216090B009FB1B4 = {
 			isa = PBXGroup;
 			children = (
@@ -76,15 +137,14 @@
 		45CAD8962216090C009FB1B4 /* KismetApp */ = {
 			isa = PBXGroup;
 			children = (
-				45CAD8972216090C009FB1B4 /* AppDelegate.swift */,
-				45CAD8992216090C009FB1B4 /* ViewController.swift */,
-				4557F5C9222073DE0094B58E /* LoginView.swift */,
-				4557F5CB2220743F0094B58E /* LoginView.xib */,
-				45CAD89B2216090C009FB1B4 /* Main.storyboard */,
-				45CAD89E22160910009FB1B4 /* Assets.xcassets */,
+				452C2689222840190046D3D8 /* Supporting Files */,
+				452C268A2228403B0046D3D8 /* Firebase Utilities */,
+				452C268622283F8B0046D3D8 /* Views */,
+				452C268422283F340046D3D8 /* Controllers */,
+				452C268722283FCF0046D3D8 /* Storyboards */,
+				452C268822283FF00046D3D8 /* Extensions */,
 				45CAD8A322160910009FB1B4 /* Info.plist */,
 				45CAD8A92216099A009FB1B4 /* GoogleService-Info (1).plist */,
-				4557F5C322206F900094B58E /* Launch Screen.storyboard */,
 			);
 			path = KismetApp;
 			sourceTree = "<group>";
@@ -158,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45CAD89F22160910009FB1B4 /* Assets.xcassets in Resources */,
+				452C268E22284B0F0046D3D8 /* KismetTab.storyboard in Resources */,
 				45CAD89D2216090C009FB1B4 /* Main.storyboard in Resources */,
 				4557F5C422206F900094B58E /* Launch Screen.storyboard in Resources */,
 				4557F5CC2220743F0094B58E /* LoginView.xib in Resources */,
@@ -177,14 +238,26 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-KismetApp/Pods-KismetApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,9 +294,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				452C269222284F060046D3D8 /* KismetTabController.swift in Sources */,
 				4557F5CA222073DE0094B58E /* LoginView.swift in Sources */,
+				452C26812227365B0046D3D8 /* UserSession.swift in Sources */,
 				45CAD89A2216090C009FB1B4 /* ViewController.swift in Sources */,
 				45CAD8982216090C009FB1B4 /* AppDelegate.swift in Sources */,
+				452C267F222728410046D3D8 /* UIViewController+Alerts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
