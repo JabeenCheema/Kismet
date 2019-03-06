@@ -1,14 +1,14 @@
 //
-//  KismetTabController.swift
+//  KismetTabBarController.swift
 //  KismetApp
 //
-//  Created by Jabeen's MacBook on 2/28/19.
+//  Created by Jabeen's MacBook on 3/5/19.
 //  Copyright © 2019 Jabeen's MacBook. All rights reserved.
 //
 
 import UIKit
 
-class KismetTabController: UITabBarController {
+class KismetTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

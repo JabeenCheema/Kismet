@@ -11,15 +11,17 @@
 		452C267F222728410046D3D8 /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452C267E222728410046D3D8 /* UIViewController+Alerts.swift */; };
 		452C26812227365B0046D3D8 /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452C26802227365B0046D3D8 /* UserSession.swift */; };
 		452C268E22284B0F0046D3D8 /* KismetTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 452C268D22284B0F0046D3D8 /* KismetTab.storyboard */; };
-		452C269222284F060046D3D8 /* KismetTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452C269122284F060046D3D8 /* KismetTabController.swift */; };
+		452C26B8222E5DCD0046D3D8 /* KismetTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452C26B7222E5DCD0046D3D8 /* KismetTabBarController.swift */; };
+		452C26BA222F57240046D3D8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452C26B9222F57240046D3D8 /* ProfileViewController.swift */; };
+		452C26BE222FB5310046D3D8 /* DiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452C26BD222FB5310046D3D8 /* DiscoverController.swift */; };
 		4557F5C422206F900094B58E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4557F5C322206F900094B58E /* Launch Screen.storyboard */; };
 		4557F5CA222073DE0094B58E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4557F5C9222073DE0094B58E /* LoginView.swift */; };
 		4557F5CC2220743F0094B58E /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4557F5CB2220743F0094B58E /* LoginView.xib */; };
 		45CAD8982216090C009FB1B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CAD8972216090C009FB1B4 /* AppDelegate.swift */; };
-		45CAD89A2216090C009FB1B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CAD8992216090C009FB1B4 /* ViewController.swift */; };
+		45CAD89A2216090C009FB1B4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CAD8992216090C009FB1B4 /* LoginViewController.swift */; };
 		45CAD89D2216090C009FB1B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45CAD89B2216090C009FB1B4 /* Main.storyboard */; };
 		45CAD89F22160910009FB1B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45CAD89E22160910009FB1B4 /* Assets.xcassets */; };
-		45CAD8AA2216099A009FB1B4 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 45CAD8A92216099A009FB1B4 /* GoogleService-Info (1).plist */; };
+		45CAD8AA2216099A009FB1B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 45CAD8A92216099A009FB1B4 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,17 +29,19 @@
 		452C267E222728410046D3D8 /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
 		452C26802227365B0046D3D8 /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
 		452C268D22284B0F0046D3D8 /* KismetTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KismetTab.storyboard; sourceTree = "<group>"; };
-		452C269122284F060046D3D8 /* KismetTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KismetTabController.swift; sourceTree = "<group>"; };
+		452C26B7222E5DCD0046D3D8 /* KismetTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KismetTabBarController.swift; sourceTree = "<group>"; };
+		452C26B9222F57240046D3D8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		452C26BD222FB5310046D3D8 /* DiscoverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverController.swift; sourceTree = "<group>"; };
 		4557F5C322206F900094B58E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		4557F5C9222073DE0094B58E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4557F5CB2220743F0094B58E /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		45CAD8942216090C009FB1B4 /* KismetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KismetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45CAD8972216090C009FB1B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		45CAD8992216090C009FB1B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		45CAD8992216090C009FB1B4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		45CAD89C2216090C009FB1B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		45CAD89E22160910009FB1B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45CAD8A322160910009FB1B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		45CAD8A92216099A009FB1B4 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		45CAD8A92216099A009FB1B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A70B38AEFB34D759F3F348F2 /* Pods_KismetApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KismetApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F37A1B25675B0943053771BD /* Pods-KismetApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KismetApp.debug.xcconfig"; path = "Target Support Files/Pods-KismetApp/Pods-KismetApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,8 +70,10 @@
 		452C268422283F340046D3D8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				45CAD8992216090C009FB1B4 /* ViewController.swift */,
-				452C269122284F060046D3D8 /* KismetTabController.swift */,
+				45CAD8992216090C009FB1B4 /* LoginViewController.swift */,
+				452C26B7222E5DCD0046D3D8 /* KismetTabBarController.swift */,
+				452C26B9222F57240046D3D8 /* ProfileViewController.swift */,
+				452C26BD222FB5310046D3D8 /* DiscoverController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -144,7 +150,7 @@
 				452C268722283FCF0046D3D8 /* Storyboards */,
 				452C268822283FF00046D3D8 /* Extensions */,
 				45CAD8A322160910009FB1B4 /* Info.plist */,
-				45CAD8A92216099A009FB1B4 /* GoogleService-Info (1).plist */,
+				45CAD8A92216099A009FB1B4 /* GoogleService-Info.plist */,
 			);
 			path = KismetApp;
 			sourceTree = "<group>";
@@ -222,7 +228,7 @@
 				45CAD89D2216090C009FB1B4 /* Main.storyboard in Resources */,
 				4557F5C422206F900094B58E /* Launch Screen.storyboard in Resources */,
 				4557F5CC2220743F0094B58E /* LoginView.xib in Resources */,
-				45CAD8AA2216099A009FB1B4 /* GoogleService-Info (1).plist in Resources */,
+				45CAD8AA2216099A009FB1B4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,12 +300,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				452C269222284F060046D3D8 /* KismetTabController.swift in Sources */,
 				4557F5CA222073DE0094B58E /* LoginView.swift in Sources */,
 				452C26812227365B0046D3D8 /* UserSession.swift in Sources */,
-				45CAD89A2216090C009FB1B4 /* ViewController.swift in Sources */,
+				45CAD89A2216090C009FB1B4 /* LoginViewController.swift in Sources */,
 				45CAD8982216090C009FB1B4 /* AppDelegate.swift in Sources */,
+				452C26BA222F57240046D3D8 /* ProfileViewController.swift in Sources */,
 				452C267F222728410046D3D8 /* UIViewController+Alerts.swift in Sources */,
+				452C26BE222FB5310046D3D8 /* DiscoverController.swift in Sources */,
+				452C26B8222E5DCD0046D3D8 /* KismetTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

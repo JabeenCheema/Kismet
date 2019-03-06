@@ -23,7 +23,7 @@ class LoginView: UIView {
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
-    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var createButton: UIButton!
     @IBOutlet weak var accountToggleMessageLabel: UILabel!
     
     private var tapGesture: UITapGestureRecognizer!
@@ -46,7 +46,7 @@ class LoginView: UIView {
         contentView.frame = bounds
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
-        loginButton.addTarget(self, action: #selector(loginButtonPressed), for: .touchUpInside)
+        createButton.addTarget(self, action: #selector(loginButtonPressed), for: .touchUpInside)
         accountToggleMessageLabel.isUserInteractionEnabled = true
         tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(gestureRecognizer:)))
         accountToggleMessageLabel.addGestureRecognizer(tapGesture)
@@ -62,10 +62,10 @@ class LoginView: UIView {
         accountLoginState = accountLoginState == .newAccount ? .existingAccount : .newAccount
         switch accountLoginState {
         case .newAccount:
-            loginButton.setTitle("Create", for: .normal)
+            createButton.setTitle("Create", for: .normal)
             accountToggleMessageLabel.text = "Log in to Kismet account"
         case .existingAccount:
-            loginButton.setTitle("Login", for: .normal)
+            createButton.setTitle("Login", for: .normal)
             accountToggleMessageLabel.text = "New User? Create an account"
         }
     }
