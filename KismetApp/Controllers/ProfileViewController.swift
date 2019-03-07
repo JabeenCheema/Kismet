@@ -14,6 +14,9 @@ class ProfileViewController: UITableViewController {
     @IBOutlet weak var signOutButton: UIButton!
     @IBOutlet weak var emailLabel: UILabel!
     
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var age: UILabel!
+    @IBOutlet weak var gender: UILabel!
     
     
     

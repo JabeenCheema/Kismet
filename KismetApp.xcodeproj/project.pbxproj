@@ -14,6 +14,13 @@
 		452C26B8222E5DCD0046D3D8 /* KismetTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452C26B7222E5DCD0046D3D8 /* KismetTabBarController.swift */; };
 		452C26BA222F57240046D3D8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452C26B9222F57240046D3D8 /* ProfileViewController.swift */; };
 		452C26BE222FB5310046D3D8 /* DiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452C26BD222FB5310046D3D8 /* DiscoverController.swift */; };
+		452C26C0223052B60046D3D8 /* FavoriteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452C26BF223052B60046D3D8 /* FavoriteController.swift */; };
+		452C26C2223053C50046D3D8 /* FavoriteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452C26C1223053C50046D3D8 /* FavoriteCollectionViewCell.swift */; };
+		452C26C422305AB80046D3D8 /* PersonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452C26C322305AB70046D3D8 /* PersonCollectionViewCell.swift */; };
+		452C26C6223064DC0046D3D8 /* SetupProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452C26C5223064DC0046D3D8 /* SetupProfileViewController.swift */; };
+		452C26C8223072930046D3D8 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452C26C7223072930046D3D8 /* DatabaseManager.swift */; };
+		452C26CA223079960046D3D8 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452C26C9223079960046D3D8 /* PersonModel.swift */; };
+		452C26CC22307D470046D3D8 /* DatabaseKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452C26CB22307D470046D3D8 /* DatabaseKeys.swift */; };
 		4557F5C422206F900094B58E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4557F5C322206F900094B58E /* Launch Screen.storyboard */; };
 		4557F5CA222073DE0094B58E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4557F5C9222073DE0094B58E /* LoginView.swift */; };
 		4557F5CC2220743F0094B58E /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4557F5CB2220743F0094B58E /* LoginView.xib */; };
@@ -32,6 +39,13 @@
 		452C26B7222E5DCD0046D3D8 /* KismetTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KismetTabBarController.swift; sourceTree = "<group>"; };
 		452C26B9222F57240046D3D8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		452C26BD222FB5310046D3D8 /* DiscoverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverController.swift; sourceTree = "<group>"; };
+		452C26BF223052B60046D3D8 /* FavoriteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteController.swift; sourceTree = "<group>"; };
+		452C26C1223053C50046D3D8 /* FavoriteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCollectionViewCell.swift; sourceTree = "<group>"; };
+		452C26C322305AB70046D3D8 /* PersonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCollectionViewCell.swift; sourceTree = "<group>"; };
+		452C26C5223064DC0046D3D8 /* SetupProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileViewController.swift; sourceTree = "<group>"; };
+		452C26C7223072930046D3D8 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		452C26C9223079960046D3D8 /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
+		452C26CB22307D470046D3D8 /* DatabaseKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseKeys.swift; sourceTree = "<group>"; };
 		4557F5C322206F900094B58E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		4557F5C9222073DE0094B58E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4557F5CB2220743F0094B58E /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
@@ -74,6 +88,9 @@
 				452C26B7222E5DCD0046D3D8 /* KismetTabBarController.swift */,
 				452C26B9222F57240046D3D8 /* ProfileViewController.swift */,
 				452C26BD222FB5310046D3D8 /* DiscoverController.swift */,
+				452C26BF223052B60046D3D8 /* FavoriteController.swift */,
+				452C26C1223053C50046D3D8 /* FavoriteCollectionViewCell.swift */,
+				452C26C5223064DC0046D3D8 /* SetupProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -81,6 +98,7 @@
 		452C268622283F8B0046D3D8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				452C26C322305AB70046D3D8 /* PersonCollectionViewCell.swift */,
 				4557F5C9222073DE0094B58E /* LoginView.swift */,
 				4557F5CB2220743F0094B58E /* LoginView.xib */,
 			);
@@ -118,6 +136,9 @@
 			isa = PBXGroup;
 			children = (
 				452C26802227365B0046D3D8 /* UserSession.swift */,
+				452C26C7223072930046D3D8 /* DatabaseManager.swift */,
+				452C26C9223079960046D3D8 /* PersonModel.swift */,
+				452C26CB22307D470046D3D8 /* DatabaseKeys.swift */,
 			);
 			path = "Firebase Utilities";
 			sourceTree = "<group>";
@@ -300,10 +321,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				452C26C6223064DC0046D3D8 /* SetupProfileViewController.swift in Sources */,
+				452C26C422305AB80046D3D8 /* PersonCollectionViewCell.swift in Sources */,
+				452C26C8223072930046D3D8 /* DatabaseManager.swift in Sources */,
 				4557F5CA222073DE0094B58E /* LoginView.swift in Sources */,
 				452C26812227365B0046D3D8 /* UserSession.swift in Sources */,
 				45CAD89A2216090C009FB1B4 /* LoginViewController.swift in Sources */,
 				45CAD8982216090C009FB1B4 /* AppDelegate.swift in Sources */,
+				452C26C2223053C50046D3D8 /* FavoriteCollectionViewCell.swift in Sources */,
+				452C26CA223079960046D3D8 /* PersonModel.swift in Sources */,
+				452C26CC22307D470046D3D8 /* DatabaseKeys.swift in Sources */,
+				452C26C0223052B60046D3D8 /* FavoriteController.swift in Sources */,
 				452C26BA222F57240046D3D8 /* ProfileViewController.swift in Sources */,
 				452C267F222728410046D3D8 /* UIViewController+Alerts.swift in Sources */,
 				452C26BE222FB5310046D3D8 /* DiscoverController.swift in Sources */,
