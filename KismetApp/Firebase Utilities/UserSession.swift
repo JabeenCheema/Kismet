@@ -37,6 +37,28 @@ final class UserSession {
                 self.userSessionAccountDelegate?.didRecieveErrorCreatingAccount(self, error: error)
             } else if let authDataResult = authDataResult {
                 self.userSessionAccountDelegate?.didCreateAccount(self, user: authDataResult.user)
+                guard let username = authDataResult.user.email?.components(separatedBy: "@").first else {
+                    print("no email entered")
+                    return
+                }
+                // add user to database
+                // use the user.uid as the document id for ease of use when updating / querying current user
+                // this is where im getting my users from in my collection view 
+                DatabaseManager.firebaseDB.collection(DatabaseKeys.UsersCollectionKey)
+                    .document(authDataResult.user.uid.description)
+                    .setData(["userId"      : authDataResult.user.uid,
+                              "email"       : authDataResult.user.email ?? "",
+                              "name"        : authDataResult.user.displayName ?? "",
+                              "imageURL"    : authDataResult.user.photoURL ?? "",
+                              "username"    : username,
+                              "age"         : "",
+                              "gender"      : ""
+                        
+                        ], completion: { (error) in
+                            if let error = error {
+                                print("error adding authenticated user to the database: \(error)")
+                            }
+                    })
             }
         }
     }
@@ -68,7 +90,7 @@ final class UserSession {
                 print("error: \(error)")
             } else {
                 // update database user as well
-                 guard let photoURL = image else {
+                guard let photoURL = image else {
                     print("no image")
                     return
                 }
@@ -99,3 +121,5 @@ final class UserSession {
         }
     }
 }
+
+

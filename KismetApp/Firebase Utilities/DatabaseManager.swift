@@ -31,10 +31,18 @@ final class DatabaseManager {
             ], completion: { (error) in
                 if let error = error {
                     print("posing race failed with error: \(error)")
-                }
-                    
-                
-    })
-        
+            }
+        })
+    }
 }
-}
+
+
+// in firebase we do this in our database which allows our authorized users to write to our database
+// Allow read/write access on all documents to any user signed in to the application
+//service cloud.firestore {
+//    match /databases/{database}/documents {
+//        match /{document=**} {
+//            allow read, write: if request.auth.uid != null;
+//        }
+//    }
+//}

@@ -21,7 +21,8 @@ struct PersonModel {
         self.gender = gender
     }
     init(dict: [String: Any]) {  // need a dict because firebase saves in dict
-        self.image = dict["image"] as? String ?? "image does not exist"      // in my firebase here I went and made a note in racereviews of what is a key and value
+        self.image = dict["image"] as? String ?? "picture does not exist"
+        // in my firebase here I went and made a note in racereviews of what is a key and value
         self.name = dict["name"] as? String ?? "name does not exist"
         self.age = dict["age"] as? String ?? "age does not exist"
         self.gender = dict["gender"] as? String ?? "gender does not exist"

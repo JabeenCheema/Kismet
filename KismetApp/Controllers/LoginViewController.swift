@@ -21,6 +21,14 @@ class LoginViewController: UIViewController {
         userSession = (UIApplication.shared.delegate as! AppDelegate).usersession
         userSession.userSessionAccountDelegate = self
         userSession.usersessionSignInDelegate = self
+        goToVC()
+        //presentKismetTabController()
+    }
+    func  goToVC(){
+        loginView.createButton.addTarget(self, action: #selector(goToLogin), for: .touchUpInside)
+    }
+    @objc func goToLogin(){
+        presentKismetTabController()
     }
 }
 
@@ -36,6 +44,7 @@ extension LoginViewController: LoginViewDelegate {
         switch accountLoginState {
         case .newAccount:
             userSession.createNewAccount(email: email, password: password)
+            //present(SetupProfileViewController(), animated: true)
         case .existingAccount:
             userSession.signInExistingUser(email: email, password: password)
         }
@@ -49,7 +58,10 @@ extension LoginViewController: UserSessionAccountCreationDelegate {
 
     func didCreateAccount(_ userSession: UserSession, user: User) {
         showAlert(title: "Account Created", message: "Account created using \(user.email ?? "no email entered") ", style: .alert) { (alert) in }
-        self.presentKismetTabController()
+        //self.presentKismetTabController()
+        let storyboard = UIStoryboard.init(name: "KismetTab", bundle: nil)
+        let setupprofileVC = storyboard.instantiateViewController(withIdentifier: "SetupProfileViewController") as! SetupProfileViewController
+        present(setupprofileVC, animated: true, completion: nil)
     }
 }
 
@@ -64,7 +76,7 @@ extension LoginViewController: UserSessionSignInDelegate {
     
     private func presentKismetTabController() {
         let storyboard = UIStoryboard(name: "KismetTab", bundle: nil)
-        let kismetTabController = storyboard.instantiateViewController(withIdentifier: "KismetTabBarController") as! KismetTabBarController
+        let kismetTabController = storyboard.instantiateViewController(withIdentifier: "SetupProfileViewController") as! SetupProfileViewController
         kismetTabController.modalTransitionStyle = .crossDissolve
         kismetTabController.modalPresentationStyle = .overFullScreen
         self.present(kismetTabController, animated: true)
