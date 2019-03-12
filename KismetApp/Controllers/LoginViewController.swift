@@ -76,7 +76,7 @@ extension LoginViewController: UserSessionSignInDelegate {
     
     private func presentKismetTabController() {
         let storyboard = UIStoryboard(name: "KismetTab", bundle: nil)
-        let kismetTabController = storyboard.instantiateViewController(withIdentifier: "SetupProfileViewController") as! SetupProfileViewController
+        let kismetTabController = storyboard.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
         kismetTabController.modalTransitionStyle = .crossDissolve
         kismetTabController.modalPresentationStyle = .overFullScreen
         self.present(kismetTabController, animated: true)

@@ -20,12 +20,14 @@ class ProfileViewController: UITableViewController {
     @IBOutlet weak var age: UILabel!
     @IBOutlet weak var gender: UILabel!
     
+    
     var usersession: UserSession!
     var storageManager: StorageManager!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: #selector(editBarButtonClicked))
         usersession = (UIApplication.shared.delegate as! AppDelegate).usersession
         storageManager = (UIApplication.shared.delegate as! AppDelegate).storageManager
         
@@ -50,6 +52,20 @@ class ProfileViewController: UITableViewController {
         usersession.signOut()
         
     }
+
+     @objc func editBarButtonClicked() {
+        let storyboard = UIStoryboard.init(name: "KismetTab", bundle: nil) // instantiating the storyboard
+        let setupVC = storyboard.instantiateViewController(withIdentifier: "SetupProfileViewController") as! SetupProfileViewController
+        navigationController?.pushViewController(setupVC, animated: true)
+    }
+    
+    // create a func for the listener
+    // query thro files, listener get stuff from usercollection
+    
+    let person = PersonModel.init(image: "imageURL", name: "name", age: "age", gender: "gender")
+    
+    
+
 }
 
 extension ProfileViewController: UserSessionSignOutDelegate {
@@ -64,8 +80,13 @@ extension ProfileViewController: UserSessionSignOutDelegate {
     }
 }
 
-
-
+extension ProfileViewController: StorageManagerDelegate {  // sending info to firebase
+    func didFetchImage(_ storageManager: StorageManager, imageURL: URL) {
+        usersession.updateExistingUserInfo(image: imageURL, displayName: name.text ?? "No Name", age: Int(age.text!) ?? 0, gender: gender.text ?? "No Gender")
+    }
+    
+    
+}
 
 
 

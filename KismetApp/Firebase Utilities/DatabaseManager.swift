@@ -23,16 +23,48 @@ final class DatabaseManager {
     }()
 
     static func postPersonProfileToDatabase(person: PersonModel) {
-         firebaseDB.collection(DatabaseKeys.UsersCollectionKey).addDocument(data: [
-            "image" : person.image,
-            "name"  : person.name,
-            "age"   : person.age,
-            "gender": person.gender,
-            ], completion: { (error) in
-                if let error = error {
-                    print("posing race failed with error: \(error)")
-            }
-        })
+        
+        guard let user = Auth.auth().currentUser else {
+            return
+        }
+        
+        DatabaseManager.firebaseDB
+            .collection(DatabaseKeys.UsersCollectionKey)
+            .document(user.uid)
+            .updateData(["gender" : person.gender,
+                         "imageURL" : person.image,
+                         "name" :   person.name,
+                         "age" : person.age                                   ])
+            { (error) in
+        if let error = error {
+            
+        } else {
+            print("posted person's profile")
+        }
+        
+//        var  reference: DocumentReference? = nil
+//         reference = firebaseDB.collection(DatabaseKeys.UsersCollectionKey).addDocument(data: [
+//            "imageURL" : person.image,
+//            "name"  : person.name,
+//            "age"   : person.age,
+//            "gender": person.gender,
+//            ], completion: { (error) in
+//                if let error = error {
+//                    print("posting userinfo failed with error: \(error)")
+//                } else {
+//                    print("post created at ref: \(reference?.documentID ?? "no doc id")")
+//
+//                    DatabaseManager.firebaseDB.collection(DatabaseKeys.UsersCollectionKey)
+//                    .document(reference!.documentID)
+//                        .updateData([ "databaseRef": reference!.documentID], completion: { (error) in
+//                            if let error = error {
+//                                print("error updating field: \(error)")
+//                            } else {
+//                                print("field updated")
+//                            }
+//                        })
+//                    }
+//        })
     }
 }
 
@@ -46,3 +78,4 @@ final class DatabaseManager {
 //        }
 //    }
 //}
+}
